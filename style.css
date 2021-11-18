@@ -20,7 +20,10 @@ header, h1, footer{
 /*background color for the header and footer*/
 header, footer{
   background-color: #15616d;
+  height: 120px
 }
+
+
 
 /*section headers*/
 h3{
@@ -54,3 +57,4 @@ hr {
   border-width: 5px;
   color:#15616d
 }
+
