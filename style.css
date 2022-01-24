@@ -1,60 +1,65 @@
-/*Link Colors LV HA*/
-a {
-  font-family: Arial, sans-serif;
-  font-size: 15px;
-}
-a:link {color:crimson}
-a:visited {color: purple}
-a:hover {color: palegreen}
-a:active {color:hotpink}
-
-/*main header and footerr*/
-header, h1, footer{
+body {
   margin: 0;
-  color: #ffecd1;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size:52px;
-  text-align: center; 
-  padding: 20px 0 20px 20px;
-}
-/*background color for the header and footer*/
-header, footer{
-  background-color: #15616d;
-  height: 120px
 }
 
+header {
+  background-color: #0B1C51;
+  margin-bottom: 40px;
+}
 
+.container {
+  display: flex;
+  flex-direction: column;
+}
 
-/*section headers*/
-h3{
+header h1 {
+  font-family: "Gochi Hand";
+  font-size: 52px;
+  color: #fff;
   text-align: center;
-  color: #15616d
-}
-/*grouping written text togeter for styling*/
-p, li{
-  text-align: center;
-  color: #15616d;
+  margin: 0;
+  padding-top: 20px;
 }
 
-/*back ground color*/
-body{
-  background-color: #ffecd1;
-}
-/*List bullet points and numbers were showing too far left from text without this*/
-ol,ul{
-  list-style-position: inside;
-}
-/* centering class*/
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
-/*styling borders*/
-hr {
-  border-style: double;
-  border-width: 5px;
-  color:#15616d
+header nav {
+  display: flex;
+  justify-content: center;
 }
 
+header nav ul {
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+}
+
+header nav ul li a {
+  font-family: Montserrat;
+  color: #fff;
+  text-decoration: none;
+  margin: 0 20px 0 0;
+}
+header nav ul li:last-child a {
+  margin-right: 0;
+}
+
+@media all and (min-width: 600px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+  }
+
+  header h1 {
+    font-size: 42px;
+    margin: 14px 0;
+    padding-top: 6px;
+  }
+
+  header nav {
+    margin-top: 14px;
+  }
+
+  header nav ul li a:hover {
+    color: #bdbdbd;
+  }
+}
